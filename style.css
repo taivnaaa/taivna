@@ -1,0 +1,148 @@
+* {
+  margin: 0%;
+}
+.pntour {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.main-container {
+  height: 850px;
+  width: 1900px;
+}
+.img-container {
+  height: 550px;
+  width: 1900px;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+.img {
+  height: 600px;
+  width: 400px;
+}
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.m-top {
+  margin-top: 100px;
+}
+.p {
+  display: flex;
+  align-self: center;
+  width: 401px;
+  height: 196px;
+  color: #303030;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 1100px;
+  width: 1800px;
+}
+.box {
+  height: 300px;
+  width: 600px;
+}
+.box2 {
+  height: 250px;
+  width: 400px;
+}
+.box3 {
+  display: flex;
+  height: 700px;
+  width: 500px;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 8px;
+}
+.box4 {
+  height: 700px;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+.box5 {
+  height: 600px;
+  width: 425px;
+  border: 1px solid red;
+}
+.main-day {
+  margin-top: 100px;
+  height: 700px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.day {
+  width: 700px;
+  height: 100px;
+  border: 1.5px solid black;
+  border-radius: 8px;
+}
+.day-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.places {
+  color: #303030;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: normal;
+}
+.day-container {
+  display: flex;
+  justify-content: space-between;
+  width: 650px;
+  height: 60px;
+}
+.days {
+  color: #323232;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+}
+.cities {
+  display: flex;
+  flex-direction: row-reverse;
+  color: #777;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+}
+.tour {
+  color: #1ac74a;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.tr-down {
+  font-size: 70px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #303030;
+  margin-top: 20px;
+}
+.gap20 {
+  display: flex;
+  gap: 20px;
+}
+.p. {
+}
