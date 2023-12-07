@@ -72,22 +72,59 @@
 // }
 // presentName(name, second);
 
-let too = window.prompt("Ehnii orong oruulna uu");
-let temdegt = window.prompt("Ta temdegtee songon uu\n1. *\n2. /\n3. -\n4.+");
-let Ltoo = window.prompt("Suulin orong oruulna uu");
+// let too = window.prompt("Ehnii orong oruulna uu");
+// let temdegt = window.prompt("Ta temdegtee songon uu\n1. *\n2. /\n3. -\n4.+");
+// let Ltoo = window.prompt("Suulin orong oruulna uu");
 
-function calculator(a, b, c) {
-  if (temdegt == "1") {
-    return a * c;
-  }
-  if (temdegt === "2") {
-    return a / c;
-  }
-  if (temdegt === "3") {
-    return a - c;
-  }
-  if (temdegt === "4") {
-    return a + c;
-  }
+// function calculator(a, b, c) {
+//   if (temdegt === "1") {
+//     return a * c;
+//   }
+//   if (temdegt === "2") {
+//     return a / c;
+//   }
+//   if (temdegt === "3") {
+//     return a - c;
+//   }
+//   if (temdegt === "4") {
+//     return a + c;
+//   }
+// }
+// console.log(calculator(too, temdegt, Ltoo));
+
+// let urt = window.prompt("End urtiig oruulna uu");
+// let urgun = window.prompt("End urtiig oruulna uu");
+// let giptnuz = window.prompt("Enr giptnuzig bichne uu");
+
+// function Talbai(a, b, c) {
+//   if (a ** 2 + b ** 2 == c ** 2) {
+//     console.log((a * b) / 2);
+//   }
+// }
+
+// console.log(Talbai(urt, urgun, giptnuz));
+
+// let names = [
+//   "Bat",
+//   "Baldan",
+//   "Dulmaa",
+//   "Gonchig",
+//   "Luubat",
+//   "Manjin",
+//   "Luuvan",
+//   "Tsuivan",
+// ];
+
+// let i = 0;
+// while (i <= names.length - 1) {
+//   console.log(names[i]);
+//   i++;
+// }
+
+let too = window.prompt("End toog oruulna uu?");
+let i = 0;
+while (i <= too) {
+  console.log(too[i]);
+  i++;
+  i++;
 }
-console.log(calculator(too, temdegt, Ltoo));
