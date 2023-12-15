@@ -1,130 +1,113 @@
-// let value = window.prompt("End toon utga oruulna uu!");
-// let currency = window.prompt("End temdegt oruulna uu!");
-// let currencyTo = window.prompt("Ymar temdegt ruu shiljuuleh ve? ");
+// const firstname = "Baldan";
+// const firstStr = firstname.slice(0, 1).toLocaleUpperCase();
+// const LastCut = firstname.slice(1, length - 1);
 
-// if (currency === "USD" && currencyTo == "MNT") {
-//   console.log(usd_mnt);
-// }else if ()
-// alert("Wending machine🤖👾👻");
-// let baraa = window.prompt(
-//   "Ta avah zuilee songonuu? \n1. Cola - 1999\n2. Sprite - 1900\n3. Alpen gold - 3999\n4. Suu - 4900\n5. Talh - 2500\n6. Zairmag - 3000\n7 Bohi - 1500\n8. Arhi - 15000"
-// );
+// console.log(firstStr +LastCut); 6646
 
-// switch (baraa) {
-//   case "1":
-//     baraa = 1999;
-//     break;
-//   case "2":
-//     baraa = 1900;
-//   case "3":
-//     break;
-//     baraa = 3999;
-//     break;
-//   case "4":
-//     baraa = 4900;
-//     break;
-//   case "5":
-//     baraa = 2500;
-//     break;
-//   case "6":
-//     baraa = 3000;
-//     break;
-//   case "7":
-//     baraa = 1500;
-//     break;
-//   case "8":
-//     baraa = 15000;
-//     break;
-//   default:
-//     alert("Ta oruulsan songoltoo dahin shalgaad bichne uu!");
-//     break;
-// }
-// let tulbur = window.prompt(
-//   "Ta yamar dungeer tulburuu hiih ve?\n(Uuur dungeer tulbur hiih bolomjgui😭🤧\n1. 5000\n2. 10000\n3. 20000 "
-// );
+// ----------------------
 
-// switch (tulbur) {
-//   case "1":
-//     tulbur = 5000;
-//     break;
-//   case "2":
-//     tulbur = 10000;
-//     break;
-//   case "3":
-//     tulbur = 20000;
-//     break;
-//   default:
-//     console.log("Ta oruulsan songoltoo shalgaad dahin bichne uu!");
+// let person  = {
+//   namee: "Taivnaa" ,
+//   agee:25
 // }
 
-// let Hariult = tulbur - baraa;
+// --------------------
+// const fruits = ["Banana", "Apple", "Pinecone", "Pineapple", "strawberry"];
 
-// if (Hariult < 0) {
-//   console.log("tanii mongon dun hureltsehgui bn ");
-// } else {
-//   console.log(Hariult);
-// }
-// const name = window.prompt("Ovog oruul");
-// const second = window.prompt("Neree ug");
-
-// function presentName(first, last) {
-//   console.log(first, last);
-// }
-// presentName(name, second);
-
-// let too = window.prompt("Ehnii orong oruulna uu");
-// let temdegt = window.prompt("Ta temdegtee songon uu\n1. *\n2. /\n3. -\n4.+");
-// let Ltoo = window.prompt("Suulin orong oruulna uu");
-
-// function calculator(a, b, c) {
-//   if (temdegt === "1") {
-//     return a * c;
+// let fineIndex = (fruit) => {
+//   for (let i = 0; i < fruits.length; i++) {
+//     if (fruits[i] === fruit) {
+//       console.log(i);
+//     }
 //   }
-//   if (temdegt === "2") {
-//     return a / c;
+//   return 0;
+// };
+// fineIndex("Pinecone");
+
+// ---------------------------
+
+// const fruits = ["Banana", "Apple", "Pinecone", "Pineapple", "strawberry"];
+// console.log(fruits.includes("Banana"));
+
+// const fruits2 = ["Banana", "Apple", "Pinecone", "Pineapple", "strawberry"];
+// console.log(fruits2.toString());
+
+// const fruits3 = ["Banana", "Apple", "Pinecone", "Pineapple", "strawberry"];
+// console.log(fruits3.indexOf());
+
+// const fruits4 = ["Banana", "Apple", "Pinecone", "Pineapple", "strawberry"];
+// console.log(fruits4.join(" and "));
+
+//  ----------------------
+// const fruits = ["Banana", "Apple", "Pinecone", "Pineapple", "strawberry"];
+
+// let toString = () => {
+//   let str = "";
+//   for (let i = 0; i < fruits.length; i++) {
+//     str += fruits[i];
 //   }
-//   if (temdegt === "3") {
-//     return a - c;
+//   return str;
+// console.log(toString());// };
+
+//  =-=-=-=-=-=-=-=-=-=-=-=-=
+
+// const fruits = ["Banana", "Apple", "Pinecone", "Pineapple", "strawberry"];
+
+// let join = () => {
+//   let str = "";
+//   let zai = " and ";
+//   for (let i = 0; i < fruits.length - 1; i++) {
+//     str += fruits[i] + zai;
 //   }
-//   if (temdegt === "4") {
-//     return a + c;
-//   }
+//   str += fruits.slice[fruits.length - 1];
+//   return str;
+// };
+// console.log(join());
+
+// -----------------------=-==-=-=-=-=-==-=
+
+// let arr = [1, 2, 3, 4];
+// let num = 5;
+
+// let t = arr + "," + num;
+// console.log(t);
+
+// =======-=-=-=-=-=-=-=-=-=-=-=
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// // for(let i = 0;) {
+
+// // }
+
+// // function eliminateLast(p) {
+// //   t = p;
+// //   return t;
+// // }
+// // console.log(eliminateLast(arr));
+
+// function add() {
+//   arr.length + 1;
 // }
-// console.log(calculator(too, temdegt, Ltoo));
+// console.log(typeof add());
 
-// let urt = window.prompt("End urtiig oruulna uu");
-// let urgun = window.prompt("End urtiig oruulna uu");
-// let giptnuz = window.prompt("Enr giptnuzig bichne uu");
+// -=-=-=-=-8-8-8--88-==--=-=-=-=
 
-// function Talbai(a, b, c) {
-//   if (a ** 2 + b ** 2 == c ** 2) {
-//     console.log((a * b) / 2);
-//   }
-// }
+const mockObject = {
+  key1: "value1",
+  key2: 42,
+  key3: ["item1", "item2"],
+  key4: { nestedKey: "nestedValue" },
+  key5: true,
+  key6: null,
+};
+let keys = Object.keys(mockObject);
 
-// console.log(Talbai(urt, urgun, giptnuz));
-
-// let names = [
-//   "Bat",
-//   "Baldan",
-//   "Dulmaa",
-//   "Gonchig",
-//   "Luubat",
-//   "Manjin",
-//   "Luuvan",
-//   "Tsuivan",
-// ];
-
-// let i = 0;
-// while (i <= names.length - 1) {
-//   console.log(names[i]);
-//   i++;
-// }
-
-let too = window.prompt("End toog oruulna uu?");
-let i = 0;
-while (i <= too) {
-  console.log(too[i]);
-  i++;
-  i++;
+function takeNextNumber(x) {
+  for (let i = 0; i < x.length - 1; i++) {
+    for (let j = i + 1; j < x.length - 1; j++) {
+      x[i] = x[j];
+    }
+  }
+  return x[i];
 }
+console.log(takeNextNumber(keys));
