@@ -1,0 +1,27 @@
+.background-image {
+  background-image: url(idyllic-shot-huge-mountain-covered-vegetation-with-body-water-its-base.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+* {
+  margin: 0;
+  border: 1px dotted gray;
+}
+.center {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.box {
+  height: 250px;
+  min-width: 300px;
+  border-radius: 8px;
+  background-color: antiquewhite;
+}
