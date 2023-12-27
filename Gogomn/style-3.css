@@ -1,14 +1,30 @@
 * {
   margin: 0;
+  border: 1px solid black;
+}
+.flex {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex: column;
+}
+.j-spaceB {
+  display: flex;
+  justify-content: space-between;
 }
 .just-center {
   display: flex;
   justify-content: center;
 }
+.background-color {
+  height: 980px;
+  width: 3000px;
+  background: #fff;
+  background: linear-gradient(183deg, #fff, #f7f7f7);
+}
 .cont {
-  background-color: rgb(204, 204, 204);
-  height: 200vh;
-  width: 1150px;
+  width: 1200px;
 }
 .row1 {
   display: flex;
@@ -19,7 +35,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1.5fr);
   grid-template-rows: 2.5fr 1.6fr;
-  max-height: 800px;
+  height: 800px;
+  max-width: 1200px;
   border: 1px solid blue;
   margin-top: 40px;
   gap: 10px;
@@ -63,4 +80,98 @@
   grid-column-start: 4;
   grid-row-start: 2;
   border-radius: 8px;
+}
+.row3 {
+  margin-top: 100px;
+
+  border: 1px solid blue;
+}
+.row3-box {
+  height: 285px;
+  width: 80%;
+  border: 1px solid blueviolet;
+}
+.row4 {
+  margin-top: 30px;
+  height: 3350px;
+  border: 2px solid blueviolet;
+}
+.row4-box1 {
+  height: 3350px;
+  width: 67%;
+  border: 1px solid purple;
+}
+.row4-box2 {
+  height: 3350px;
+  width: 33%;
+  border: 1px solid pink;
+}
+.date {
+  width: 100px;
+  height: 5px;
+  border-radius: 8px;
+  border: 1px solid blue;
+}
+.dot3 {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  border: 1px solid blue;
+}
+.row4-boxes {
+  height: 170px;
+  width: 85%;
+  border: 1px solid red;
+}
+.row4-boxes-M {
+  display: flex;
+  flex-direction: column;
+  gap: 25px 0px;
+}
+.row4-boxes2 {
+  height: 250px;
+  max-width: 75%;
+  border: 1px solid blue;
+}
+.row4-boxes2-M {
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0px;
+}
+.box1-10 {
+  margin-left: -62px;
+  min-height: 1400px;
+  max-width: 100.5%;
+  border: 1px solid rgb(231, 97, 2);
+}
+.row5 {
+  margin-top: 50px;
+  height: 600px;
+  border: 1px solid blue;
+}
+.row6 {
+  margin-top: 50px;
+  height: 500px;
+  border: 1px solid blue;
+}
+.row7 {
+  margin-top: 50px;
+  height: 390px;
+  border: 1px solid blue;
+}
+.row8 {
+  margin-top: 50px;
+  height: 390px;
+  border: 1px solid blue;
+}
+.row9 {
+  background-color: #1a1a1a;
+  width: 100vw;
+}
+
+.row10 {
+  margin-top: 50px;
+  height: 290px;
+  border: 1px solid blue;
 }
