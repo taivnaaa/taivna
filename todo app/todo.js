@@ -1,6 +1,12 @@
-let Array = [1, 2, 3, 4, 5, 6, 8];
-// console.log(
-//   stringArray.map((el) => el.slice(0, 1).toUpperCase() + el.slice(1))
-// );
+function allowDrop(event) {
+  event.preventDefault();
+}
 
-console.log(Array.map((i) => i % 2 == 0));
+function drag(event) {
+  event.dataTransfer.setData("text", event.target.id);
+}
+function drop(event) {
+  event.preventDefault();
+  const boxId = event.dataTransfer.getData("text");
+  event.target.appendChild(document.getElementById(boxId));
+}

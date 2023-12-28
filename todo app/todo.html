@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="./todo.css" />
   </head>
   <body class="background-image">
-    <div class="center">
-      <div class="container">
-        <div draggable="true" class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+    <div class="container" ondragover="allowDrop(event)" ondrop="drop(event)">
+      <div draggable="true" class="box" id="box-1" ondragstart="drag(event)">
+        dgaag
       </div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div
+      class="container"
+      ondragover="allowDrop(event)"
+      ondrop="drop(event)"
+      id="container-2"
+    >
+      <div class="box"></div>
     </div>
     <script src="./todo.js"></script>
   </body>
