@@ -7,21 +7,36 @@
     <link rel="stylesheet" href="./todo.css" />
   </head>
   <body class="background-image">
-    <div class="container" ondragover="allowDrop(event)" ondrop="drop(event)">
-      <div draggable="true" class="box" id="box-1" ondragstart="drag(event)">
-        dgaag
+    <div class="center">
+      <div
+        class="container"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+        id="container-1"
+      ></div>
+
+      <div
+        class="container"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+        id="container-2"
+      ></div>
+
+      <div class="modalContainer">
+        <div class="modal">
+          <p>Title</p>
+          <input id="title-input" type="text" />
+          <p>Desc</p>
+          <input id="description-input" type="text" />
+          <p>Status</p>
+          <input id="status-input" type="text" />
+          <p>Prior</p>
+          <input id="priority-input" type="text" />
+
+          <button onclick="addTodo()">Submit</button>
+          <button onclick="hide()">Hide</button>
+        </div>
       </div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-    </div>
-    <div
-      class="container"
-      ondragover="allowDrop(event)"
-      ondrop="drop(event)"
-      id="container-2"
-    >
-      <div class="box"></div>
     </div>
     <script src="./todo.js"></script>
   </body>
