@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel=“stylesheet” href=“path/to/font-awesome/css/font-awesome.min.css”>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@700&family=Open+Sans&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>To Do Tasks</title>
+  </head>
+  <body class="flex flex-center">
+    <!-- Here starts CONTAINER -->
+    <div class="container gap-16 margin-100-auto">
+      <!-- TODO - large container is here -->
+      <div
+        class="task1 bg-grey radius-7 padding-4 flex-column gap-10"
+        id="task1"
+      >
+        <!-- TODO - task container is here -->
+        <div
+          class="to-do space-between flex-column gap-16 task width-100 height-100"
+          id="todo"
+        >
+          <!-- Title of TODO task -->
+          <div class="title flex-row bold gap-8">
+            <div class="title-hero">To do</div>
+            <div class="title-number grey">1</div>
+          </div>
+          <!-- CONTENTS of TODO task -->
+          <div
+            id="todo-contents"
+            class="contents flex-column gap-10"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+        </div>
+        <!-- ADD CARD is here -->
+        <div
+          class="add padding-2 radius-5"
+          id="add-todo"
+          onclick="displayVisible('todo')"
+        >
+          <p>+ Add card</p>
+        </div>
+      </div>
+      <!-- IN PROGRESS - large container is here -->
+      <div
+        class="task1 bg-grey radius-7 padding-4 flex-column gap-10"
+        id="task2"
+      >
+        <!-- IN PROGRESS - task container is here -->
+        <div
+          class="inprogress space-between flex-column gap-16 task width-100 height-100"
+          id="inprogress"
+        >
+          <!-- Title of InProgress task -->
+          <div class="title flex-row bold gap-8">
+            <div class="title-hero">In Progress</div>
+            <div class="title-number2 grey">1</div>
+          </div>
+          <!-- CONTENTS of In Progress task -->
+          <div
+            id="inprogress-contents"
+            class="contents flex-column gap-10"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+        </div>
+        <!-- ADD CARD is here -->
+        <div
+          class="add padding-2 radius-5"
+          id="add-inprogress"
+          onclick="displayVisible('inprogress')"
+        >
+          <p>+ Add card</p>
+        </div>
+      </div>
+      <!-- STUCK - large container is here -->
+      <div
+        class="task1 bg-grey radius-7 padding-4 flex-column gap-10"
+        id="task3"
+      >
+        <!-- Stuck - task container is here -->
+        <div
+          class="stuck space-between flex-column gap-16 task width-100 height-100"
+          id="stuck"
+        >
+          <!-- Title of Stuck task -->
+          <div class="title flex-row bold gap-8">
+            <div class="title-hero">Stuck</div>
+            <div class="title-number3 grey">1</div>
+          </div>
+          <!-- CONTENTS of Stuck task -->
+          <div
+            id="stuck-contents"
+            class="contents flex-column gap-10"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+        </div>
+        <!-- ADD CARD is here -->
+        <div
+          class="add padding-2 radius-5"
+          id="add-stuck"
+          onclick="displayVisible('stuck')"
+        >
+          <p>+ Add card</p>
+        </div>
+      </div>
+      <!-- DONE - large container is here -->
+      <div
+        class="task1 bg-grey radius-7 padding-4 flex-column gap-10"
+        id="task4"
+      >
+        <!-- Done - task container is here -->
+        <div
+          class="done space-between flex-column gap-16 task width-100 height-100"
+          id="done"
+        >
+          <!-- Title of Done task -->
+          <div class="title flex-row bold gap-8">
+            <div class="title-hero">Done</div>
+            <div class="title-number4 grey">1</div>
+          </div>
+          <!-- CONTENTS of Done task -->
+          <div
+            id="done-contents"
+            class="contents flex-column gap-10"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          >
+            <!-- Task is here -->
+          </div>
+        </div>
+        <!-- ADD CARD is here -->
+        <div
+          class="add padding-2 radius-5"
+          id="add-done"
+          onclick="displayVisible('done')"
+        >
+          <p>+ Add card</p>
+        </div>
+      </div>
+    </div>
+    <!-- ADD TASK IS HERE -->
+    <div
+      class="addcard-container bg-blackish width-height-100vp absolute flex flex-center display-none"
+      id="add-card-container"
+    >
+      <div class="addcard radius-7 flex-column gap-24 padding-16" id="modal">
+        <h1 class="addcard-hero font-size-24">Add Task</h1>
+        <div class="addcard-title">
+          <p class="add-cardtitle font-size-18">Title</p>
+          <input
+            type="text"
+            id="title"
+            required
+            autocomplete="off"
+            class="width-100 input padding-8 radius-4"
+          />
+        </div>
+        <div class="addcard-description">
+          <p class="description font-size-18">Description</p>
+          <textarea
+            type="text"
+            required
+            autocomplete="off"
+            id="description"
+            class="width-100 input radius-4 padding-8 textarea"
+            cols="50"
+            rows="4"
+          ></textarea>
+        </div>
+        <div class="addcard-status">
+          <p class="status font-size-18">Status</p>
+          <select
+            name="status"
+            id="status"
+            class="width-100 input radius-4 padding-8"
+          >
+            <option value="todo" id="status-todo">To do</option>
+            <option value="inprogress" id="status-inprogress">
+              In progress
+            </option>
+            <option value="stuck" id="status-stuck">Stuck</option>
+            <option value="done" id="status-done">Done</option>
+          </select>
+        </div>
+        <div class="addcard-priority">
+          <p class="priority font-size-18">Priority</p>
+          <select
+            id="priority"
+            name="priority"
+            class="width-100 input padding-8 radius-4"
+          >
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+        </div>
+        <button
+          onclick="addToDo()"
+          class="white bg-black border-none radius-4 padding-8 font-size-18"
+        >
+          Add Task
+        </button>
+      </div>
+    </div>
+    <!-- EDIT TASK IS HERE -->
+    <div
+      class="editcard-container bg-blackish width-height-100vp absolute flex flex-center display-none"
+      id="edit-card-container"
+    >
+      <div class="addcard radius-7 flex-column gap-24 padding-16" id="modal">
+        <h1 class="editcard-hero font-size-24">Edit Task</h1>
+        <div class="editcard-title">
+          <p class="add-cardtitle font-size-18">Title</p>
+          <input
+            type="text"
+            id="edit-title"
+            autocomplete="off"
+            class="width-100 input padding-8 radius-4"
+          />
+        </div>
+        <div class="editcard-description">
+          <p class="description font-size-18">Description</p>
+          <textarea
+            type="text"
+            id="edit-description"
+            autocomplete="off"
+            class="width-100 input radius-4 padding-8 textarea"
+            cols="50"
+            rows="4"
+          ></textarea>
+        </div>
+        <div class="editcard-status">
+          <p class="status font-size-18">Status</p>
+          <select
+            name="status"
+            id="edit-status"
+            class="width-100 input radius-4 padding-8"
+          >
+            <option value="todo" id="status-todo">To do</option>
+            <option value="inprogress" id="status-inprogress">
+              In progress
+            </option>
+            <option value="stuck" id="status-stuck">Stuck</option>
+            <option value="done" id="status-done">Done</option>
+          </select>
+        </div>
+        <div class="addcard-priority">
+          <p class="priority font-size-18">Priority</p>
+          <select
+            name="priority"
+            id="edit-priority"
+            class="width-100 input padding-8 radius-4"
+          >
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+        </div>
+        <button
+          onclick="updateTask()"
+          class="white bg-black border-none radius-4 padding-8 font-size-18"
+          id="update-task"
+        >
+          Update Task
+        </button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f9b9073fa3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
