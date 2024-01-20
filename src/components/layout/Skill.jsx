@@ -1,5 +1,7 @@
+import { SkillLogo } from "../supps/logoo";
+
 const logo1 = [
-  { cardLogo: "../png/javascript.png", cardName: "Javascript" },
+  { cardLogo: "../png/javscript.png", cardName: "Javascript" },
   { cardLogo: "../png/icon-typescript.png", cardName: "Typescript" },
   { cardLogo: "../png/icon-react.png", cardName: "react" },
   { cardLogo: "../png/icon-nextjs.png", cardName: "nextjs" },
@@ -7,22 +9,15 @@ const logo1 = [
   { cardLogo: "../png/express.png", cardName: "express" },
   { cardLogo: "../png/nest.png", cardName: "nest" },
   { cardLogo: "../png/icon-socket.png", cardName: "socket" },
-];
-const logo2 = [
   { cardLogo: "../png/icon-postgresql.png", cardName: "postresql" },
   { cardLogo: "../png/icon-mongodb.png", cardName: "mongodb" },
   { cardLogo: "../png/icon-sass.png", cardName: "sass" },
   { cardLogo: "../png/icon-tailwindcss.png", cardName: "tailwindcss" },
   { cardLogo: "../png/figma.png", cardName: "figma" },
   { cardLogo: "../png/cypress.png", cardName: "Cypress" },
-  {
-    cardLogo: "../png/storybook.png",
-
-    cardName: "storybook",
-  },
+  { cardLogo: "../png/storybook.png", cardName: "storybook" },
   { cardLogo: "../png/git.png", cardName: "git" },
 ];
-import { SkillLogo } from "../supps/logoo";
 
 export const Skill = () => {
   return (
@@ -34,20 +29,11 @@ export const Skill = () => {
       </div>
       <div>The skills, tools and technologies I am really good at:</div>
       <div>
-        <div>
-          {
-            (logo1.map = (el) => (
-              <SkillLogo Logoo={el.cardLogo} Namee={el.cardName}></SkillLogo>
-            ))
-          }
-        </div>
-        <div>
-          {
-            (logo2.map = (el) => (
-              <SkillLogo Logoo={el.cardLogo} Namee={el.cardName}></SkillLogo>
-            ))
-          }
-        </div>
+        {/* <div> */}
+        {logo1.map((el) => (
+          <SkillLogo Logoo={el.cardLogo} Namee={el.cardName}></SkillLogo>
+        ))}
+        {/* </div> */}
       </div>
     </div>
   );
