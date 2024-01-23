@@ -1,3 +1,3 @@
 export const GetInTouch = () => {
-  return <div>ggg</div>;
+  return <div></div>;
 };

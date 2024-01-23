@@ -17,10 +17,10 @@ export default function Home() {
       <Profile />
       <About />
       <Skill />
-      {/* <GetInTouch />
-      <Work />
       <Experience />
-      <Footer /> */}
+      <Work />
+      <GetInTouch />
+      <Footer />
     </div>
   );
 }

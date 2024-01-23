@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
     <div className="f">
-      <div className="  px-8 py-14 border-emerald-200 border-2 flex  justify-between ">
+      <div className=" px-8 my-24 mx-20 flex  justify-between ">
         <div className="text-3xl">SS</div>
         <div className="gap-x-12 border-emerald-200 border-2 flex">
           <div className="flex gap-x-6  text-gray-600">

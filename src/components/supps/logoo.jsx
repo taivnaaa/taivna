@@ -2,7 +2,7 @@ export const SkillLogo = (props) => {
   console.log(props);
   return (
     <div>
-      <img width={50} height={50} src={props.Logoo} alt="" />
+      <img className=" w-16 h-16 object-fill" src={props.Logoo} alt="" />
       <div>{props.Namee}</div>
     </div>
   );
