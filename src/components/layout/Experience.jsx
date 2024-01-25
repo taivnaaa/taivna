@@ -24,8 +24,8 @@ import { Repeater } from "../supps/Exp";
 
 export const Experience = () => {
   return (
-    <div className="w-screen h-auto bg-gray-100">
-      <div className=" px-8 my-24 mx-20">
+    <div className="w-screen h-auto bg-gray-100  py-24 px-20">
+      <div className=" px-8 ">
         <div className="flex flex-col items-center gap-y-5 mb-24">
           <div className="bg-gray-200 rounded-xl w-32 justify-center flex text-gray-600 ">
             Experience
@@ -46,12 +46,12 @@ export const Experience = () => {
             ></Repeater>
           ))}
 
-          <div className=" w-2/4 h-80 rounded-lg  shadow-xl bg-gray-50 px-8 py-8">
+          <div className="   rounded-xl  shadow-xl bg-gray-50 px-8 py-12">
             <div className=" flex gap-x-12">
-              <div className=" w-52">
-                <img src="/logo-upwork.png" alt="" className=" h-8" />
+              <div className=" w-50">
+                <img src="/logo-upwork.png" alt="" className=" h-7" />
               </div>
-              <div className="flex flex-col  leading-7 text-gray-700 w-[450px] gap-y-1 ">
+              <div className="flex flex-col  leading-7 text-gray-700 w-[420px] gap-y-1 ">
                 <p className="  font-semibold text-xl text-gray-900 mb-3">
                   Full Stack Developer
                 </p>

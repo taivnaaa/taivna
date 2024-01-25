@@ -1,14 +1,14 @@
-export const Header = () => {
+export const Header = (props) => {
   return (
-    <div className="f">
-      <div className=" px-8 my-24 mx-20 flex  justify-between ">
-        <div className="text-3xl">SS</div>
-        <div className="gap-x-12 border-emerald-200 border-2 flex">
-          <div className="flex gap-x-6  text-gray-600">
-            <p>About</p>
-            <p>Work</p>
-            <p>Testimonials</p>
-            <p>Contact</p>
+    <div >
+      <div className=" xl: px-8 my-24 mx-20 flex  justify-between ">
+        <div className="text-3xl"> &lt;SS/&gt;</div>
+        <div className="gap-x-12 flex">
+          <div className="xl: flex gap-x-6  text-gray-600 sm: hidden ">
+            <button onClick={props.a}>About</button>
+            <button onClick={props.b}>Work</button>
+            <button onClick={props.c}>Testimonials</button>
+            <button onClick={props.d}>Contact</button>
           </div>
           <div className="flex gap-x-4">
             <img src="/icon.png" width={34} height={24} />

@@ -1,11 +1,11 @@
 export const Repeater = (props) => {
   return (
-    <div className=" w-2/4 h-80 shadow-xl rounded-lg bg-gray-50 px-8 py-8">
+    <div className=" shadow-xl rounded-xl bg-gray-50 px-8 py-12">
       <div className=" flex gap-x-12">
-        <div className=" w-52">
-          <img src="/logo-upwork.png" alt="" className=" h-8" />
+        <div className=" w-50">
+          <img src="/logo-upwork.png" alt="" className=" h-7" />
         </div>
-        <div className="flex flex-col  leading-7 text-gray-700 w-[450px] gap-y-1 ">
+        <div className="flex flex-col  leading-7 text-gray-700 w-[420px] gap-y-1 ">
           <p className="  font-semibold text-xl text-gray-900 mb-3">
             {props.Neg}
           </p>

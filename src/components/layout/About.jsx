@@ -1,17 +1,17 @@
-export const About = () => {
+export const About = ({ a }) => {
   return (
-    <div className="w-screen h-auto bg-gray-100">
-      <div className="flex flex-col gap-y-12 px-8 my-24 mx-20">
+    <div ref={a} className="w-screen  bg-gray-100 py-24 px-20">
+      <div className="flex flex-col gap-y-12 px-8">
         <div className="flex justify-center ">
           <div className="bg-gray-200 rounded-xl w-32 justify-center flex">
             About me
           </div>
         </div>
         <div className="flex ">
-          <div className="w-1/2">
-            <img src="/photo.png" alt="" />
+          <div className="w-1/2 ">
+            <img src="/Ghost.jpeg"  />
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 pl-8">
             <div className="text-3xl font-bold mb-6">
               Curious about me? Here you have it:
             </div>

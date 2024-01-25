@@ -1,10 +1,10 @@
 export const Profile = () => {
   return (
-    <div className="max-w-1800 border-emerald-200 border-2 px-8 my-24 mx-20">
+    <div className="max-w-1800 px-8 my-24 mx-20">
       <div className="flex flex-row">
-        <div className="w-1/2 flex flex-col gap-y-12">
-          <div className="flex flex-col gap-y-2">
-            <p className="text-6xl font-bold">Hi, I'm Saarlaa 👋</p>
+        <div className="w-1/2 flex flex-col gap-y-12 pr-8">
+          <div className="flex flex-col gap-y-3 ">
+            <p className="text-6xl font-bold">Hi, I'm Baldan 👋</p>
             <div className="text-gray-600 ">
               I'm a full stack developer (React.js & Node.js) with a focus on
               creating (and occasionally designing) exceptional digital
@@ -28,14 +28,14 @@ export const Profile = () => {
               <div>Available for new projects</div>
             </div>
           </div>
-          <div className="flex">
+          <div className="flex gap-x-2">
             <img src="/icoon.png" alt="" />
             <img src="/iconn.png" alt="" />
             <img src="iccon.png" alt="" />
           </div>
         </div>
-        <div className="w-1/2 flex justify-center">
-          <img src="/Pick.png" width={400} height={200} />
+        <div className="w-1/2 flex justify-center ">
+          <img src="/Pinguin.jpeg" className=" " width={400} height={200} />
           <div className="size-{400px} bg-gray-200"></div>
         </div>
       </div>
