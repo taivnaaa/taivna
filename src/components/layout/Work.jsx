@@ -16,7 +16,7 @@ import { Project } from "../supps/WorkSlide";
 
 export const Work = ({b}) => {
   return (
-    <div ref={b} className="  w-auto px-8 my-24 mx-20">
+    <div ref={b} className=" px-8 my-24 mx-20 max-[768px]:mx-0">
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center gap-y-4">
           <div className="bg-gray-200 rounded-xl w-32 justify-center flex text-gray-600 ">

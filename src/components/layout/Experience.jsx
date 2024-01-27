@@ -24,7 +24,7 @@ import { Repeater } from "../supps/Exp";
 
 export const Experience = () => {
   return (
-    <div className="w-screen h-auto bg-gray-100  py-24 px-20">
+    <div className="bg-gray-100  py-24 px-20 max-[768px]:px-0">
       <div className=" px-8 ">
         <div className="flex flex-col items-center gap-y-5 mb-24">
           <div className="bg-gray-200 rounded-xl w-32 justify-center flex text-gray-600 ">
@@ -47,11 +47,12 @@ export const Experience = () => {
           ))}
 
           <div className="   rounded-xl  shadow-xl bg-gray-50 px-8 py-12">
-            <div className=" flex gap-x-12">
-              <div className=" w-50">
+            <div className=" flex gap-x-12 max-[728px]:flex-col max-[728px]:gap-y-4">
+              <div className=" max-w-50">
                 <img src="/logo-upwork.png" alt="" className=" h-7" />
               </div>
-              <div className="flex flex-col  leading-7 text-gray-700 w-[420px] gap-y-1 ">
+              <div className="max-[728px]:flex max-[728px]:flex-col-reverse max-[728px]:gap-y-4">
+              <div className="flex flex-col  leading-7 text-gray-700 max-w-[420px] gap-y-1  ">
                 <p className="  font-semibold text-xl text-gray-900 mb-3">
                   Full Stack Developer
                 </p>
@@ -62,6 +63,7 @@ export const Experience = () => {
                 </p>
               </div>
               <div className=" text-gray-700">Dec 2015 - May 2017</div>
+            </div>
             </div>
           </div>
         </div>

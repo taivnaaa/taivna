@@ -22,7 +22,7 @@ import { SkillLogo } from "../supps/SkillsLogoo";
 
 export const Skill = ({ c }) => {
   return (
-    <div ref={c} className=" mx-20 my-24 ">
+    <div ref={c} className=" mx-20 my-24 max-[768px]:mx-0 max-[768px]:px-4">
       <div className="flex  items items-center flex-col gap-y-4 mb-12">
         <div>
           <div className="bg-gray-200 rounded-xl w-32 justify-center flex  text-gray-600">
@@ -34,12 +34,12 @@ export const Skill = ({ c }) => {
         </div>
       </div>
       <div className=" flex flex-col items-center gap-y-4">
-        <div className="flex gap-x-16 flex-wrap gap-y-4 max-[1280px]:w-[600px] max-[1280px]:flex max-[1280px]:h-[200px]">
+        <div className="flex gap-x-16  flex-wrap gap-y-4  max-[768px]:gap-x-6 ">
           {logo1.map((el) => (
             <SkillLogo Logoo={el.cardLogo} Namee={el.cardName}></SkillLogo>
           ))}
         </div>
-        <div className=" flex gap-x-16 flex-wrap max-[1280px]:w-[600px] max-[1280px]:flex max-[1280px]:h-[200px] ">
+        <div className="flex gap-x-16 flex-wrap  max-[768px]:gap-x-6  ">
           {logo2.map((el) => (
             <SkillLogo Logoo={el.cardLogo} Namee={el.cardName}></SkillLogo>
           ))}

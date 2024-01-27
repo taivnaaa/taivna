@@ -1,8 +1,8 @@
 export const Profile = () => {
   return (
-    <div className="max-w-1800 px-8 my-24 mx-20">
-      <div className="flex flex-row">
-        <div className="w-1/2 flex flex-col gap-y-12 pr-8">
+    <div className="max-w-1800 px-8 my-24 mx-20 max-[768px]:mx-0">
+      <div className="flex  max-[1044px]:flex max-[1044px]:flex-col-reverse max-[1044px]:gap-y-5">
+        <div className="min-[1044px]:w-1/2 flex flex-col gap-y-12 pr-8">
           <div className="flex flex-col gap-y-3 ">
             <p className="text-6xl font-bold">Hi, I'm Baldan 👋</p>
             <div className="text-gray-600 ">
@@ -34,8 +34,8 @@ export const Profile = () => {
             <img src="iccon.png" alt="" />
           </div>
         </div>
-        <div className="w-1/2 flex justify-center ">
-          <img src="/Pinguin.jpeg" className=" " width={400} height={200} />
+        <div className="min-[1044px]:w-1/2  flex justify-center ">
+          <img src="/Pinguin.jpeg" className=" rounded" width={400} height={200} />
           <div className="size-{400px} bg-gray-200"></div>
         </div>
       </div>

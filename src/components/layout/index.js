@@ -6,3 +6,5 @@ export * from "./Pofile";
 export * from "./Skill";
 export * from "./Work";
 export * from "./GetInTouch";
+export * from "./Menu";
+

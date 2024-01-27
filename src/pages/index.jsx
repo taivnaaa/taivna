@@ -11,6 +11,7 @@ import {
   About,
 } from "@/components/layout";
 
+
 export default function Home() {
   const refAbout = useRef(null);
   const handleClickAbout = () => {
@@ -31,7 +32,7 @@ export default function Home() {
   
 
   return (
-    <div className=" ">
+    < >
       <Header 
       a={handleClickAbout} 
       b={handleClickWork} 
@@ -45,6 +46,6 @@ export default function Home() {
       <Work b={refWork}/>
       <GetInTouch  d={refContact}/>
       <Footer />
-    </div>
+    </>
   );
 }
