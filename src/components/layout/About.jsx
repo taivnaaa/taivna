@@ -1,9 +1,9 @@
 export const About = ({ a }) => {
   return (
-    <div ref={a} className="w-screen  bg-gray-100 py-24 px-20 max-[768px]:px-0">
+    <div ref={a} className="w-screen  bg-gray-100 py-24 px-20 max-[768px]:px-0 dark:bg-[#111827]">
       <div className="flex flex-col gap-y-12 md:px-8">
         <div className="flex justify-center ">
-          <div className="bg-gray-200 rounded-xl w-32 justify-center flex">
+          <div className="bg-gray-200 rounded-xl w-32 justify-center flex dark:text-[#D1D5DB] dark:bg-[#374151]">
             About me
           </div>
         </div>
@@ -15,7 +15,7 @@ export const About = ({ a }) => {
             <div className="text-3xl font-bold mb-6">
               Curious about me? Here you have it:
             </div>
-            <div className="flex flex-col gap-y-4 text-gray-600 leading-6 ">
+            <div className="flex flex-col gap-y-4 text-gray-600 leading-6 dark:text-[#D1D5DB]">
               <div>
                 I'm a passionate, self-proclaimed designer who specializes in
                 full stack development (React.js & Node.js). I am very

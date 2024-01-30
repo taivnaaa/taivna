@@ -25,11 +25,11 @@ export const Skill = ({ c }) => {
     <div ref={c} className=" mx-20 my-24 max-[768px]:mx-0 max-[768px]:px-4">
       <div className="flex  items items-center flex-col gap-y-4 mb-12">
         <div>
-          <div className="bg-gray-200 rounded-xl w-32 justify-center flex  text-gray-600">
+          <div className="bg-gray-200 rounded-xl w-32 justify-center flex  text-gray-600  dark:text-[#D1D5DB] dark:bg-[#374151]">
             Skills
           </div>
         </div>
-        <div className=" text-gray-600 text-lg">
+        <div className=" text-gray-600 text-lg dark:text-[#D1D5DB]">
           The skills, tools and technologies I am really good at:
         </div>
       </div>

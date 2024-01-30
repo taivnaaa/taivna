@@ -17,10 +17,10 @@ export const Project = (props) => {
         alt=""
       />
       <div className="lg:w-1/2 py-12 px-12 rounded-lg flex flex-col gap-y-7 ">
-        <p className="  font-semibold text-xl text-gray-900 ">
+        <p className=" dark:text-[#D1D5DB] font-semibold text-xl text-gray-900 ">
           {props.workHeader}
         </p>
-        <p className=" text-gray-600">{props.workText}</p>
+        <p className=" text-gray-600 dark:text-[#D1D5DB]">{props.workText}</p>
         <div className="flex flex-wrap gap-x-2 gap-2">
           {bttn.map((el) => {
             return <GrayButton tovch={el}></GrayButton>;

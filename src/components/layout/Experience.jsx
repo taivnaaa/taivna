@@ -24,10 +24,10 @@ import { Repeater } from "../supps/Exp";
 
 export const Experience = () => {
   return (
-    <div className="bg-gray-100  py-24 px-20 max-[768px]:px-0">
+    <div className="bg-gray-100  py-24 px-20 max-[768px]:px-0 dark:bg-[#111827]">
       <div className=" px-8 ">
         <div className="flex flex-col items-center gap-y-5 mb-24">
-          <div className="bg-gray-200 rounded-xl w-32 justify-center flex text-gray-600 ">
+          <div className="bg-gray-200 rounded-xl w-32 justify-center flex text-gray-600  dark:text-[#D1D5DB] dark:bg-[#374151] ">
             Experience
           </div>
           <div className=" text-lg text-gray-600">
