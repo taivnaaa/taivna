@@ -23,9 +23,14 @@ app.post("/", (request, response) => {
   fs.writeFileSync("db.json", JSON.stringify(arr));
   response.send(arr);
 });
-app.delete("/", (request , response)=>{
-  
-})
+app.delete("/:id", (request, response) => {
+  const { id } = request.params;
+  response.send("amjilttai");
+  const filteredArray = arr.filter((user) => {
+    arr.id !== id;
+  });
+  fs.writeFileSync("db.json", JSON.stringify(filteredArray));
+});
 app.listen(port, () => {
   console.log(`http://localhost:${port}`);
 });
